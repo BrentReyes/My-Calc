@@ -1,0 +1,112 @@
+@font-face {
+    font-family: "Digital7Mono";
+    src: url("Digital7Mono-Yz9J4.ttf");
+}
+@font-face {
+    font-family: "OrbitronBlack";
+    src: url("OrbitronBlack-n6dV.ttf");
+}
+
+
+body{
+    background: linear-gradient(to bottom right, rgb(222, 255, 10), rgb(255, 8, 8));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40em;
+    margin: 0;
+}
+
+
+.name{
+    display: flex;
+    color: #fafafa;
+    flex-direction: column;
+    line-height: 0;
+    font-size: 75%;
+    h1{
+        font-family: "OrbitronBlack", sans-serif;
+        text-transform: uppercase;
+        margin-bottom: 1;
+    }
+    .model{
+        margin-bottom: 0;
+    }
+    p{
+        color: #ededed;
+        font-family: "Digital7Mono", sans-serif;
+    }
+}
+
+
+
+.calculator{
+    background-color: #222;
+    padding: 25px;
+    clip-path: inset(0 round 20px);
+    width: 260px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+#output{
+    cursor: auto;
+    width: 100%;
+    height: 50px;
+    text-align: right;
+    margin-bottom: 20px;
+    padding: 45px 13px 45px 13px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 6px;
+    background-color: #a6fcd7;
+    color: #1a1a1a;
+    font-family: "Digital7Mono", sans-serif;
+    font-size: 4rem;
+}
+
+
+/* buttons */
+.button{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button{
+    height: 50px;
+    width: 55px;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 2px;
+    background-color: #818181;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-size: 28px;
+    color: #fafafa;
+}
+
+button:hover{
+    background-color: rgb(126, 126, 126)181;
+}
+
+.operator{
+    background-color: #424242;
+}
+
+.clear{
+    background-color: #ffa600;
+}
+.equals{
+    background-color: green;
+    grid-column: span 2;
+    width: auto;
+}
+
+
+.secret{
+    background-color: #222;
+    cursor: auto;
+}

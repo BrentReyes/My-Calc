@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="calculator">
+	<div class="name">
+	<h1>CaseOh</h1>
+	<p class="model">AC-2000XM16</p>
+	<p>Made by Brnt</p>
+    </div> 
+	
+    <input type="text" id="output" readonly placeholder="0">
+<div class="button">
+	<button class="clear" onclick="clearDisplay()" ondblclick="window.alert('OFF')">C</button>
+	<button onclick="val('.')">.</button>
+	<button class="operator" onclick="val('/')">÷</button>
+	<button class="operator" onclick="val('*')">x</button>
+	
+	<button onclick="val('7')">7</button>
+	<button onclick="val('8')">8</button>
+	<button onclick="val('9')">9</button>
+	<button class="operator" onclick="val('-')">-</button>
+
+	<button onclick="val('4')">4</button>
+	<button onclick="val('5')">5</button>
+	<button onclick="val('6')">6</button>
+	<button class="operator" onclick="val('+')">+</button>
+
+	<button onclick="val('1')">1</button>
+	<button onclick="val('2')">2</button>
+	<button onclick="val('3')">3</button>
+	<button class="operator" onclick="val('**')">^</button>
+	
+
+	<button onclick="val('0')">0</button>
+	<button class="equals" onclick="calc()">=</button>
+	<a class="secret" href="https://youtu.be/IwW0GJWKH98?si=gRmtPd6sirYnXHoM" target="_blank"></a>
+</div>
+<script src="script.js" ></script>
+</div>
+</body>
+</html>
